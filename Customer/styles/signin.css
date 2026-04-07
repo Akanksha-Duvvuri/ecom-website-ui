@@ -1,0 +1,85 @@
+body{
+    display: flex;
+    margin: 0px;
+}
+
+.logo{
+    background-color: darkgrey;
+    width: 30%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo a{
+    text-decoration: none;
+    color: black;
+}
+
+.sign{
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.forms{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(211, 211, 211, 0.8);
+    box-shadow: 2px 2px 5px black;
+    border: 2px solid grey;
+    height: 80%;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.forms h2{
+    font-size: 1.8rem;
+    /* text-align: center; */
+}
+
+.inp .user,
+.inp .pass{
+    padding: 5px 20px 5px 15px;
+    border-radius: 10px;
+    border: none;
+    margin: 10px;
+    width: 110%;
+    margin-left: -20px;
+}
+
+
+.inp .user:focus,
+.inp .pass:focus{
+    outline: none;
+}
+
+.inp .btn{
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 70px;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+.inp .btn:hover{
+    background-color: grey;
+}
+
+.forms p{
+    padding: 0 20px;
+}
+
+.forms a{
+    /* text-decoration: none; */
+    color: cadetblue;
+}
+

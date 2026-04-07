@@ -1,0 +1,221 @@
+body{
+    margin: 0px;
+    background-color:rgb(194, 192, 192);
+}
+
+.first{
+    background-image: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+}
+
+.nav{
+    background-color: rgba(128, 128, 128, 1);
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: sticky
+}
+
+.nav i{
+    cursor: pointer;
+}
+
+.logo a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav .logo{
+    margin-left: 20px;
+    transition-duration: 0.3s;
+}
+
+.nav .logo:hover{
+    text-shadow: 1px 1px 1px rgb(69, 69, 69);
+}
+
+.search{
+    display: flex;
+    align-items: center;
+}
+
+.search .bar{
+    width: 450px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+    margin-right: 10px;
+}
+
+.search .bar:focus{
+    outline: none;
+}
+
+.acc{
+    margin-right: 20px;
+}
+
+.acc i{
+    padding: 0px 10px;
+    transition-duration: 0.3s;
+}
+
+.acc i:hover{
+    text-shadow: 1px 1px 1px rgb(69, 69, 69);
+}
+
+.acc a{
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width: 840px) {
+    .nav .acc i{
+        display: none;
+    }
+
+    .nav .bar,
+    .nav .mag
+    {
+        display: none;
+    }
+
+    .item img{
+        display: none;
+    }
+}
+
+.content{
+    display: flex;
+    /* gap: 50px; */
+    margin: 20px;
+    justify-content: space-around;
+    /* height: 500px; */
+}
+
+.prod{
+    background-color: whitesmoke;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+hr{
+    border: 1px solid black;
+    width: 100%;
+}
+.item{
+    display: flex;
+    height: 25%;
+    /* background-color: crimson; */
+    width: 90%;
+    /* justify-content: space-around; */
+    align-items: center;
+    padding: 10px;
+}
+
+.item img{
+    height: 80%;
+    width: 15%;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.desc{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: coral; */
+    flex: 1;
+    align-items: center;
+    /* padding: 0 5px; */
+    margin-left: 20px;
+    padding: 10px;    
+}
+
+.desc .name{
+    line-height: 20px;
+}
+
+.desc .dec,
+.desc .inc{
+    border: none;
+    background-color: cadetblue;
+    color: beige;
+}
+
+.desc .no{
+    border: none;
+    background-color: white;
+}
+
+.desc .rm{
+    border: none;
+    background-color: white;
+    color: grey;
+    padding: 3px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.desc button:hover{
+    cursor: pointer;
+}
+
+.cost{
+    background-color: whitesmoke;
+    width: 20%;
+    height: fit-content;
+    padding: 10px;
+}
+
+.ship, .total{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cost button{
+    background-color: goldenrod;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 10px;
+    width: 90%;
+    transition-duration: 0.2s;
+}
+
+.cost button a{
+    text-decoration: none;
+    color: black;
+}
+
+.cost button:hover{
+    cursor: pointer;
+    background-color: rgb(163, 124, 25);
+}
+
+.media{
+    background-color: lightgray;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+}
+
+.media div{
+    margin: 20px 50px;
+}
+
+.media i{
+    transition-duration: 0.3s;
+}
+
+.media i:hover{
+    color: rgb(69, 69, 69);
+    cursor: pointer;
+}

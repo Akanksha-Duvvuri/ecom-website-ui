@@ -1,0 +1,235 @@
+body{
+    margin: 0px;
+}
+
+.first{
+    background-image: url('../pictures/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+}
+
+.nav{
+    background-color: rgba(128, 128, 128, 1);
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: sticky
+}
+
+.nav i{
+    cursor: pointer;
+}
+
+.logo a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav .logo{
+    margin-left: 20px;
+    transition-duration: 0.3s;
+}
+
+.nav .logo:hover{
+    text-shadow: 1px 1px 1px rgb(69, 69, 69);
+}
+
+.search{
+    display: flex;
+    align-items: center;
+}
+
+.search .bar{
+    width: 450px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+    margin-right: 10px;
+}
+
+.search .bar:focus{
+    outline: none;
+}
+
+.acc{
+    margin-right: 20px;
+}
+
+.acc a{
+    text-decoration: none;
+    color: black;
+}
+
+.acc i{
+    padding: 0px 10px;
+    transition-duration: 0.3s;
+}
+
+.acc i:hover{
+    text-shadow: 1px 1px 1px rgb(69, 69, 69);
+}
+
+@media screen and (max-width: 840px) {
+    .nav .acc i{
+        display: none;
+    }
+
+    .nav .bar,
+    .nav .mag
+    {
+        display: none;
+    }
+}
+
+.content{
+    height: fit-content;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: fit-content;
+    margin: 150px 20px;
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+
+.content button{
+    background-color: grey;
+    border: none;
+    padding: 7px 7px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition-duration: 0.3s;
+}
+
+.content button:hover{
+    cursor: pointer;
+    background-color: rgb(88, 88, 88);
+}
+
+.content button a{
+    color: black;
+    text-decoration: none;
+}
+
+.cat{
+    /* background-color: green; */
+    height: fit-content;
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px 10px;
+}
+
+.cat .shirt{
+    /* background-color: greenyellow; */
+    height: 300px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.cat .shirt:hover{
+    background-color: lightgray;
+    /* border-radius: 10px; */
+}
+
+.cat .desc{
+    font-size: 0.8rem;
+    line-height: 8px;
+    /* background-color: brown; */
+    transition-duration: 0.3s;
+}
+
+.cat .desc:hover{
+    color: rgb(69, 69, 69);
+    cursor: pointer;
+}
+.cat img{
+    height: 80%;
+    width: 80%;
+    margin: 3px 0px;
+    border-radius: 10px;
+    transition-duration: 0.3s;
+}
+
+.cat img:hover{
+    box-shadow: 1px 1px 1px grey;
+    cursor: pointer;
+}
+
+.new{
+    /* background-color: grey; */
+    height: fit-content;
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px 10px;
+}
+
+.new .newa{
+    /* background-color: greenyellow; */
+    height: 300px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition-duration: 0.2s;
+    padding: 10px;
+}
+
+.new .newa:hover{
+    background-color: lightgray;
+    /* border-radius: 10px; */
+}
+.newa .desc{
+    font-size: 0.8rem;
+    line-height: 8px;
+    /* background-color: brown; */
+    transition-duration: 0.3s;
+}
+
+.newa .desc:hover{
+    color: rgb(69, 69, 69);
+    cursor: pointer;
+}
+
+.newa img{
+    height: 80%;
+    width: 80%;
+    margin: 3px 0px;
+    border-radius: 10px;
+    transition-duration: 0.3s;
+}
+
+.newa img:hover{
+    box-shadow: 1px 1px 1px grey;
+    cursor: pointer;
+}
+
+.media{
+    background-color: lightgray;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+}
+
+.media div{
+    margin: 20px 50px;
+}
+
+.media i{
+    transition-duration: 0.3s;
+}
+
+.media i:hover{
+    color: rgb(69, 69, 69);
+    cursor: pointer;
+}

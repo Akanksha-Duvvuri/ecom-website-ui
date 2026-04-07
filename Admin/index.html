@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+     <div class="nav">
+            <div class="logo">
+                <i class="fa-solid fa-terminal"><a href="index.html">NAME</a></i>
+            </div>
+            <a href="index.html" class="admin">ADMIN</a>
+            <button class="btn"><a href="/Customer/signin.html">Sign Out</a></button>
+    </div>
+
+    <div class="content">
+        <div class="sales">
+            <div class="revenue">
+                <div class="totalrev">
+                    <p>Total Revenue</p>
+                    <h3>$XXXX.XX</h3>
+                    <p>300+ orders</p>
+                </div>
+                <hr>
+                <div class="totalcust">
+                    <p>Total Customers</p>
+                    <h3>30xxxx</h3>
+                    <p>Overall</p>
+                </div>
+                <hr>
+                <div class="totalorder">
+                    <p>Total Orders</p>
+                    <h3>$25XXXXX</h3>
+                    <p>Last week</p>
+                </div>
+            </div>
+            <div class="stats">
+                <canvas id="myChart" style="width:100%; max-width:700px;">
+                </canvas>
+            </div>
+            <div class="orders">
+                <div class="last">
+                    <p>Last Orders</p>
+                    <input type="text" placeholder="Search">
+                    <button class="filter">Filters</button>
+                </div>
+                <div class="list">
+                    <div class="top">
+                        <p><b>ID</b></p>
+                        <p><b>Name</b></p>
+                        <p><b>Date</b></p>
+                        <p><b>Tracking</b></p>
+                        <p><b>Amount</b></p>
+                    </div>
+                    <hr>
+                    <div class="ind">
+                        <div class="user">
+                            <p>#123A</p>
+                            <p>John Doe</p>
+                            <p>30-12-25</p>
+                            <button class="pending">Pending</button>
+                            <p>$30.00</p>
+                        </div>
+                        <hr>
+                        <div class="user">
+                            <p>#123A</p>
+                            <p>John Doe</p>
+                            <p>30-12-25</p>
+                            <button class="completed">Completed</button>
+                            <p>$30.00</p>
+                        </div>
+                        <hr>
+                        <div class="user">
+                            <p>#123A</p>
+                            <p>John Doe</p>
+                            <p>30-12-25</p>
+                            <button class="pending">Pending</button>
+                            <p>$30.00</p>
+                        </div>
+                        <hr>
+                        <div class="user">
+                            <p>#123A</p>
+                            <p>John Doe</p>
+                            <p>30-12-25</p>
+                            <button class="cancel">Cancelled</button>
+                            <p>$30.00</p>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="prod">
+            <div class="trending">
+                <p>Trending Products</p>
+                <hr>
+                <div class="item">
+                    <img src="/Customer/shirt.jpg">
+                    <div class="desc">
+                        <p>White Shirt</p>
+                        <p>4.5 (20 ratings)</p>
+                    </div>
+                    <p>$29.99</p>
+                </div>
+                <hr>
+                <div class="item">
+                    <img src="/Customer/shirt.jpg">
+                    <div class="desc">
+                        <p>White Shirt</p>
+                        <p>4.5 (20 ratings)</p>
+                    </div>
+                    <p>$29.99</p>
+                </div>
+                <hr>
+                <div class="item">
+                    <img src="/Customer/shirt.jpg">
+                    <div class="desc">
+                        <p>White Shirt</p>
+                        <p>4.5 (20 ratings)</p>
+                    </div>
+                    <p>$29.99</p>
+                </div>
+                <hr>
+                <div class="item">
+                    <img src="/Customer/shirt.jpg">
+                    <div class="desc">
+                        <p>White Shirt</p>
+                        <p>4.5 (20 ratings)</p>
+                    </div>
+                    <p>$29.99</p>
+                </div>
+                <hr>
+            </div>
+            <div class="rev">
+                <p>Revenue Distribution</p>
+                <div class="amt">
+                    <div class="cut">
+                        <div class="empty"></div>
+                     </div>
+                    <div class="button">
+                        <button class="ecom"></button>
+                        <p>Ecomm Cut</p>
+                        <button class="earning"></button>
+                        <p>Earnings</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

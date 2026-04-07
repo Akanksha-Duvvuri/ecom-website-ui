@@ -1,0 +1,274 @@
+body{
+    margin: 0px;
+}
+
+.nav{
+    background-color: rgba(128, 128, 128, 1);
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: sticky;
+}
+
+.nav i{
+    cursor: pointer;
+}
+
+.logo a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav .logo{
+    margin-left: 20px;
+    transition-duration: 0.3s;
+}
+
+.nav .logo:hover{
+    text-shadow: 1px 1px 1px rgb(69, 69, 69);
+}
+
+.admin{
+    text-decoration: none;
+    color: black;
+    /* margin-left: 70px; */
+}
+
+.btn{
+    margin-right: 10px;
+    background-color: lightgrey;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 5px;
+    cursor: pointer;
+}
+
+.btn a{
+    text-decoration: none;
+    color: black;
+}
+
+.content{
+    background-color:lightgray;
+    display: flex;
+    /* margin: 30px 10px; */
+    padding: 30px 10px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.sales{
+    /* background-color:pink ; */
+    display: flex;
+    flex-direction: column;
+    margin: 0px 20px;
+    flex: 0 0 60%;
+}
+
+.revenue{
+    display: flex;
+    background-color: white;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.totalrev, .totalcust, .totalorder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: white; */
+    height: 60%;
+    width: 33%;
+    padding: 10px 0;
+    /* border-radius: 10px; */
+}
+
+hr{
+    height: 80%;
+    border: 1px solid black;
+}
+
+.stats{
+    height: 250px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.orders{
+    background-color: white;
+    border-radius: 10px;
+}
+
+.last{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    align-items: center;
+}
+
+.last input{
+    height: 20%;
+    width: 40%;
+    padding: 5px 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.last input:focus{
+    outline: none;
+}
+
+.last .filter{
+    padding: 5px 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.list, .user{
+    padding: 0 10px;
+}
+
+.list .top, .user{
+    display: flex;
+    /* padding: 0 10px; */
+    justify-content: space-evenly;
+}
+
+.user p, .user button{
+    margin: 5px 5px;
+}
+
+.list hr{
+    border: 1px solid grey;
+}
+
+.user button{
+    width: 90px;
+    border-radius: 10px;
+    /* padding: 10px 10px; */
+    height: 50px;
+    /* cursor: pointer; */
+}
+
+.user .pending{
+    background-color: rgba(255, 69, 0, 0.3);
+    color: orangered;
+    border: none;
+}
+
+.user .completed{
+    background-color: rgba(0, 128, 0, 0.3);
+    color: green;
+    border: none;
+}
+
+.user .cancel{
+    background-color: rgba(255, 0, 0, 0.3);
+    color: red;
+    border: none;
+}
+
+.prod{
+    /* background-color: palegreen; */
+    flex: 1;
+    margin-right: 20px;
+    min-width: 200px;
+}
+
+@media(max-width: 900px) {
+    .sales {
+        flex: 0 0 90%;
+        margin: 0 10px;
+    }
+
+    .prod {
+        flex: 0 0 90%;
+        margin: 0 10px;
+    }
+}
+
+.trending{
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.item{
+    display: flex;
+    justify-content: space-around;
+    /* background-color: slateblue; */
+    align-items: center ;
+}
+
+.item img{
+    height: 10%;
+    width: 10%;
+}
+
+.trending hr{
+    border: 1px solid black;
+}
+
+.item .desc{
+    line-height: 5px;
+    margin-right: 100px;
+    /* color: grey; */
+}
+
+.rev{
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 10px 5px;
+}
+
+.cut{
+    width: 250px;
+    height: 250px;
+    background-image: conic-gradient(goldenrod 80%, grey 20%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.empty {
+    width: 60%;
+    height: 60%;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.amt{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.amt .button{
+    display: flex;
+    flex-direction: column;
+}
+
+.button .ecom{
+    width: 50px;
+    height: 20px;
+    background-color: darkgrey;
+    border: 1px solid black;
+}
+
+.button .earning{
+    width: 50px;
+    height: 20px;
+    background-color: goldenrod;
+    border: 1px solid black;
+}
